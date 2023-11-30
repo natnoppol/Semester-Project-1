@@ -240,6 +240,28 @@ p .home-p{
   font-weight: 400;
   line-height: normal;
 }
+/* home-for-kid */
+.home-forkid{
+  width: 1439px;
+  height: 692px;
+  background-color: var(--bg-2);
+}
+.home-forkid img{
+  width: 702px;
+  height: 692px;
+  right: 1px;
+}
+.home-forkid-p{
+  width: 701px;
+  left: 19px;
+  bottom: 44px;
+  color: var(--black);
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 
 @media (max-width:768px) {
