@@ -170,6 +170,7 @@ p .home-p{
   align-items: center;
   gap: 51px;
   background-color: var(--bg-2);
+  margin-bottom: 100px;
 }
 .home-vulun-con{
   display: flex;
@@ -211,9 +212,11 @@ p .home-p{
 .home-open-img img{
   width: 318px;
   height: 477px;
+  margin-bottom: 100px;
 }
 /* home-open-hr */
 .home-open-hr{
+  margin-bottom: 100px;
   display: flex;
   flex-direction: row;
   width:600px;
@@ -241,17 +244,21 @@ p .home-p{
   line-height: normal;
 }
 /* home-for-kid */
-.home-forkid{
+.home-kid,.home-teachers, .home-researchers{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
   width: 1439px;
   height: 692px;
   background-color: var(--bg-2);
+  margin-bottom: 100px;
 }
-.home-forkid img{
+.home-kid img{
   width: 702px;
   height: 692px;
   right: 1px;
 }
-.home-forkid-p{
+.home-kid-p{
   width: 701px;
   left: 19px;
   bottom: 44px;
@@ -262,6 +269,38 @@ p .home-p{
   font-weight: 400;
   line-height: normal;
 }
+/* teacher */
+.home-teachers-p{
+  width: 701px;
+  color: var(--black);
+  right: 11px;
+  top: 222px;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.home-teachers img{
+  width: 702px;
+  height: 692px;
+}
+/* researchers */
+.home-researchers-p{
+  color: var(--black);
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.home-researchers img{
+  width: 702px;
+  height: 692px;
+
+}
+
+
 
 
 @media (max-width:768px) {
