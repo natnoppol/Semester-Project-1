@@ -18,35 +18,34 @@
   }
   
   .form-field {
-    font-family: inherit;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     padding: 7px 4px;
     background: transparent;
     transition: border-color 0.2s;
-    box-sizing: border-box;
     width: 100%;
     margin: 0 0 1em 0;
-    border: 1px solid #8b1c20;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: #eeeeee;
     resize: none;
     outline: none;
   }
   
-  input[type="text"],
+  /* input[type="text"],
   input[type="email"] {
       height: calc(3em + 2px);
-  }
+  } */
   
-  .form-field::placeholder {
+  /* .form-field::placeholder {
     color: transparent;
-  }
+  } */
   
-  .form-field:placeholder-shown ~ .form-label {
+  /* .form-field:placeholder-shown ~ .form-label {
     font-size: 16px;
     cursor: text;
     top: 20px;
-  }
+  } */
   
   label,
   .form-field:focus ~ .form-label {
