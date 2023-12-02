@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+@import url(/src/contact_style.css);
+
 :root{
   --bg-1: #F4DFC8;
   --bg-2: #FAF6F0;
@@ -20,6 +22,7 @@ html{
 body {
   background-color: var(--bg-3);
   font-family: Arial, Helvetica, sans-serif,source serif pro;
+  overflow: auto;
   }
 a{
   text-decoration: none;
