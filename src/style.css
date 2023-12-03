@@ -22,7 +22,7 @@ html{
 body {
   background-color: var(--bg-3);
   font-family: Arial, Helvetica, sans-serif,source serif pro;
-  overflow: auto;
+  /* overflow: auto; */
   }
 a{
   text-decoration: none;
