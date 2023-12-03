@@ -23,23 +23,84 @@
     <div class="Contact">
         <img src="/images/contact-img.jpg">
     </div>
-    <form class="form-contact">
-        <div class="form-fname">
-          <input type="text" id="full-name" class="form-field" placeholder="Your Name" required>
-          <label for="full-name" class="form-label">Your Name</label>
+    <div class="form-con">
+      <div class="form-con-contact">
+        <form class="form-contact">
+          <div class="form-fname">
+            <input type="text" id="full-name" class="form-field" placeholder="Your Name" required>
+            <label for="full-name" class="form-label">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" class="form-field" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <label for="email" class="form-label">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" class="form-field" placeholder="Your Message" rows="6" required></textarea>
+            <label for="message" class="form-label">Your Message</label>
+          </div>
+          <input type="submit" value="Send" id="button">
+        </form> 
+      </div>  
+    </div>
+    <section class="cont-open">
+      <div class="con-open-hr">
+        <h1>Opening Hours</h1>
+        <div class="con-open-hr-day">
+          <p class="con-open">
+            Monday <br>Tuesday<br> Wednesday <br>Tursday<br> Friday<br> Saturday <br>Sunday
+          </p>
         </div>
-        
-        <div class="form-group">
-          <input type="email" id="email" class="form-field" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-          <label for="email" class="form-label">Your Email</label>
+        <div class="con-open-hr-close">
+          <p class="con-open-close">
+            Closed <br> 10:00 - 16:00 <br>10:00 - 16:00 <br>10:00 - 16:00<br> 10:00 - 19:00 <br>09:00 - 16:00<br> 10:00 - 13:00
+          </p>
         </div>
-      
-        <!-- <div class="form-group">
-          <textarea id="message" class="form-field" placeholder="Your Message" rows="6" required></textarea>
-          <label for="message" class="form-label">Your Message</label>
+      </div>
+      <div class="con-open-img">
+        <img src="/images/con-img-1.jpg" alt="this is con img">
+        <img src="/images/con-img-2.jpg" alt="this is con img">
+        <img src="/images/con-img-3.jpg" alt="this is con img">
+      </div>
+    </section>
+    <footer class="footer-home">
+      <div class="footer-left">
+        <a href="/index.html" class="logo"><img src="/images/logo.png" alt="Logo"></a>
+          <p class="footer-links">
+            <a href="/index.html" class="link-1">Home</a>
+            <a href="/Contribution.html">Contribution</a>
+            <a href="/Exhibition.html">Exhibition</a>
+            <a href="/Contact.html">Contact</a>
+            <a href="/Document.html">TERMS & CONDITIONS</a>
+          </p>
+          <p class="footer-company-name">CSM COPYRIGHT © 2023</p>
+      </div>
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker" style="font-size:24px"></i>
+            <p><span>Oslo, Norway</span></p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>Tel.: 02 225 2777<br>
+              Fax : 02 225 2775</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:natnoppol@gmail.com">natnoppol@gmail.com</a></p>
+          </div>
         </div>
-         -->
-      </form> 
-
+        <div class="footer-right">
+          <p class="footer-company-explore">
+            <span>Explore together</span>
+            Come join us at the Community Science Museum where we're committed to making science accessible to all.
+          </p>
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+    </footer>
 </body>
 </html>
