@@ -1,0 +1,65 @@
+:root{
+    --bg-1: #F4DFC8;
+    --bg-2: #FAF6F0;
+    --bg-3: #BBAB8C;
+    --hover: #B4B4B3;
+    --white: #ffffff;
+    --black: #000000;
+    --involved: #0077B6;
+  }
+  .exhibition-img img{
+    width: 1440px;
+    height: 798px;
+  }
+  .exhibition h1{
+    color: var(--white);
+  }
+  .ex-img-1{
+    background-color: var(--bg-2);
+    font-weight: 900;
+    color: var(--black);
+    margin: 0;
+    font-size: 20px;
+  }
+  .ex-img-1 h1{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .ex-img-2{
+    background-color: var(--bg-2);
+    font-weight: 900;
+    color: var(--black);
+    margin: 100px 0 0 0;
+    font-size: 20px;
+  }
+  .ex-img-2 h1{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .ex-img-3{
+    background-color: var(--bg-2);
+    font-weight: 900;
+    color: var(--black);
+    margin: 100px 0 0 0;
+    font-size: 20px;
+  }
+  .ex-img-3 h1{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .ex-img-4{
+    background-color: var(--bg-2);
+    font-weight: 900;
+    color: var(--black);
+    margin: 100px 0 0 0;
+    font-size: 20px;
+    padding: 100px;
+  }
+  .ex-img-4 h1{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }

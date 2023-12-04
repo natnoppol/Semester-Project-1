@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 @import url(/src/contact_style.css);
+@import url(/src/contribution_style.css);
+@import url(/src/Exhibition_style.css);
+@import url(/src/Document_style.css);
 
 :root{
   --bg-1: #F4DFC8;
