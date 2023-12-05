@@ -171,9 +171,9 @@ input[type=submit] {
 .con-open-img img{
   border-radius: 50%;
 }
-
-.text {}
-
+.con-text{
+  text-align: center;
+}
 @media (max-width:768px) {
   .Contact img {
     width: 768px;
@@ -234,7 +234,6 @@ input[type=submit] {
     font-weight: 400;
     line-height: normal;
   }
-
   .con-open-img {
     width: 318px;
     height: 477px;
@@ -244,6 +243,7 @@ input[type=submit] {
     gap: 20px;
     border-radius: 25px;
   }
-
-  .text {}
+  .con-text{
+    text-align: center;
+  }
 }
