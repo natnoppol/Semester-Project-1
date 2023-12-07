@@ -21,47 +21,42 @@
 html{
   font-size: calc(60% + 0.8vmin);
 }
-/* Navbar */
 body {
   background-color: var(--bg-3);
   font-family: 'Arial', 'Helvetica', 'sans-serif', 'source serif pro';
   /* overflow: auto; */
 }
-
+/* Navbar */
+.nav .menu{
+  display: flex;
+  gap: 50px;
+}
+.nav .menu a{
+  color:var(--black);
+}
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
 }
-
 .header {
   background-color: var(--bg-1);
   position: sticky;
   top: 0;
   width: 100%;
 }
-
 .logo {
   display: inline-block;
   font-size: 60px;
   margin-left: 10px;
 }
-
-
-
 /* img */
 .home-img img{
   width: 100%;
 }
 .side-menu{
   display: none;
-}
-.nav .menu{
-  display: flex;
-  gap: 50px;
-  color:black;
 }
 /* home-event */
 article .home-text{
@@ -307,6 +302,9 @@ p.home-researchers-p{
   height: 692px;
 }
 /* footer */
+.footer-home .footer-links a{
+  color: var(--black);
+}
 .footer-home{
 	background-color: var(--bg-2);
 	font: bold 16px;
