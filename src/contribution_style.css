@@ -47,3 +47,12 @@ padding: 50px;
     width: 100%;
     margin: 100px 0;
 }
+.donation-t{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 150px;
+}
