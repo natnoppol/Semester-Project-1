@@ -9,7 +9,6 @@
   --green: #008000;
   --red: #8b1c20;
 }
-
 .Contact img {
   width: 100%;
   height: 668px;
@@ -26,7 +25,6 @@
   align-items: center;
   padding: 100px;
 }
-
 .form-con-contact {
   width: 40%;
   height: 100%;
@@ -35,20 +33,17 @@
   background: var(--bg-1);
   border-radius: 25px;
 }
-
 form {
   width: 80%;
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
 }
-
 .form-group {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
 }
-
 .form-field {
   width: 100%;
   font-size: 20px;
@@ -63,23 +58,19 @@ form {
   resize: none;
   outline: none;
 }
-
 input[type="text"],
 input[type="email"] {
   height: calc(3em + 2px);
 }
-
 .form-field::placeholder {
   color: transparent;
 }
-
 .form-field:placeholder-shown~.form-label {
   font-size: 25px;
   cursor: text;
   top: 20px;
   color: var(--hover);
 }
-
 .form-label,
 .form-field:focus~.form-label {
   position: absolute;
@@ -129,7 +120,7 @@ input[type=submit] {
 .con-open-hr {
   display: flex;
   flex-direction: row;
-  width: 600px;
+  width: 70%;
   padding: 29px 37px;
   justify-content: center;
   align-items: flex-start;
@@ -140,7 +131,6 @@ input[type=submit] {
   border-radius: 25px;
 }
 .con-open {
-  color: var(--black);
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -166,10 +156,12 @@ input[type=submit] {
 }
 .con-text{
   text-align: center;
+  font-size: 20px;
+  font-weight: 400;
 }
 @media (max-width:768px) {
   .Contact img {
-    width: 768px;
+    width: 100%;
     height: 668px;
   }
   .form-con {
@@ -197,6 +189,7 @@ input[type=submit] {
   }
   .con-open-hr {
     display: flex;
+
   }
   .con-open {
     color: var(--black);
@@ -213,15 +206,15 @@ input[type=submit] {
     line-height: normal;
   }
   .con-open-img {
-    width: 318px;
-    height: 477px;
+    padding-top: 100px;
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    border-radius: 25px;
+    flex-direction: column;
   }
   .con-text{
     text-align: center;
+  }
+  .con img{
+    margin-bottom: 20px;
   }
 }
