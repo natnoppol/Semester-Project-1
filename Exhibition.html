@@ -5,36 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exhibition page</title>
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <header class="header">
-      <a href="/index.html" class="logo"><img src="/images/logo.png" alt="Logo"></a>
+      <a href="./index.html" class="logo"><img src="./images/logo.png" alt="Logo"></a>
       <input type="checkbox" class="side-menu" id="side-menu">
       <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
       <nav class="nav">
         <ul class="menu">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/Contribution.html">Contribution</a></li>
-          <li><a href="/Exhibition.html">Exhibition</a></li>
-          <li><a href="/Contact.html">Contact Us</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./Contribution.html">Contribution</a></li>
+          <li><a href="./Exhibition.html">Exhibition</a></li>
+          <li><a href="./Contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
     <div class="center">
       <div class="exhibition-img">
-        <img src="/images/Exhibition-img-1.jpg" />
+        <img src="./images/Exhibition-img-1.jpg" />
       </div>
       <div class="up-event">
         <h1>EXHIBITION’S</h1>
       </div>
       <div class="exhibition">
         <div class="card">
-          <img class="card_image" src="/images/Exhibition-img-2.jpg" />
-          <h2 class="card_title">Evolution</h2>
+          <div class="card-header-container">
+            <h2 class="card_title">Evolution</h2>
+            <img class="card_image" src="./images/Exhibition-img-2.jpg" />
+          </div>
           <div class="card_content">
             <div class="card_text">
               <p>
@@ -50,12 +52,12 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="exhibition">
         <div class="card">
-          <img class="card_image" src="/images/Exhibition-img-3.jpg" />
-          <div class="card_content">
+          <div class="card-header-container">
             <h2 class="card_title">Cosmology</h2>
+            <img class="card_image" src="./images/Exhibition-img-3.jpg" />            
+          </div>          
+          <div class="card_content">            
             <div class="card_text">
               <p>
                 Explore the wonders of our cosmos. Our fantastic exhibition, ‘The Sky
@@ -72,25 +74,34 @@
       </div>
       <div class="exhibition">
         <div class="card">
-          <img class="card_image" src="/images/Exhibition-img-4.jpg" />
-          <div class="card_content">
-            <h2 class="card_title">Biology & Medicine</h2>
+          <div class="card-header-container">
+            <h2 class="card_title">Robotics & AI</h2>
+            <img class="card_image" src="./images/Exhibition-img-4.jpg" />           
+          </div>           
+          <div class="card_content">            
             <div class="card_text">
               <p>
-                From micro-organisms to the human body, major breakthroughs in biology
-          are offering us unique insights into the great wonders of the tiny
-          world. For many people their life expectancy is much longer and their
-          quality of life much improved, thanks to the growth of our
-          understanding of medicine. Over a series of exhibits we explore the
-          history of medicine and take a look at some major breakthroughs
-          including the discovery of penicillin and the first heart transplant.
-          Many of our great medicinal discoveries have come not only from the
-          lab, but also from observing animals in the wild. Often our fellow
-          creatures have beat us to it.
+                The information revolution is here -
+                and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.
               </p>
             </div>
           </div>
         </div>
+          <div class="card">
+            <div class="card-header-container">
+              <h2 class="card_title">Biology & Medicine</h2>
+              <img class="card_image" src="./images/Exhibition-img-5.jpg" />            
+            </div>          
+            <div class="card_content">            
+              <div class="card_text">
+                <p>
+                  From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.
+                  For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.
+                  Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
     <div class="up-event">
@@ -100,7 +111,7 @@
       <div class="row" style="justify-content: space-between;">
         <div class="box-show color-red" style="width: 60%;">
           <div class="image-show">
-            <img src="/images/ex-img-1.jpg" alt="Image Description" />
+            <img src="./images/ex-img-1.jpg" alt="Image Description" />
           </div>
           <div class="textbox" style="background-color:#F4DFC8;">
             <p>The national museums exhibition programme 2024</p>
@@ -109,7 +120,7 @@
         <div class="box-show color-green" style="width: 40%;">
           <!-- First Image and Text -->
           <div class="image-show">
-            <img src="/images/ex-img-2.jpg" alt="Image Description" />
+            <img src="./images/ex-img-2.jpg" alt="Image Description" />
           </div>
           <div class="textbox"
             style="background-color: #89B9AD; margin-bottom: 20px;">
@@ -117,7 +128,7 @@
           </div>
           <!-- Second Image and Text -->
           <div class="image-show">
-            <img src="/images/ex-img-3.jpg" alt="Image Description" />
+            <img src="./images/ex-img-3.jpg" alt="Image Description" />
           </div>
           <div class="textbox" style="background-color: #89B9AD;">
             <p>Stories from the museum</p>
@@ -127,7 +138,7 @@
       <div class="row">
         <div class="box-show color-blue" style="width: 70%; ">
           <div class="image-show">
-            <img src="/images/ex-img-4.jpg" alt="Image Description" />
+            <img src="./images/ex-img-4.jpg" alt="Image Description" />
           </div>
           <div class="textbox" style="background-color: #FFC5C5;">
             <p>Welcome to The National Museum's library </p>
@@ -138,14 +149,14 @@
     <footer class="footer-home">
       <div class="footer-container">
         <div class="footer-left">
-          <a href="/index.html" class="logo"><img src="/images/logo.png"
+          <a href="./index.html" class="logo"><img src="./images/logo.png"
               alt="Logo"></a>
           <ul class="footer-links">
-            <li><a href="/index.html" class="link-1">Home</a></li>
-            <li><a href="/Contribution.html">Contribution</a></li>
-            <li><a href="/Exhibition.html">Exhibition</a></li>
-            <li><a href="/Contact.html">Contact</a></li>
-            <li><a href="/Document.html">TERMS & CONDITIONS</a></li>
+            <li><a href="./index.html" class="link-1">Home</a></li>
+            <li><a href="./Contribution.html">Contribution</a></li>
+            <li><a href="./Exhibition.html">Exhibition</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+            <li><a href="./Document.html">TERMS & CONDITIONS</a></li>
           </ul>
         </div>
         <div class="footer-center">

@@ -50,9 +50,13 @@ h2{
 }
 .nav .menu a{
   color:var(--black);
+  margin-top: 30px;
+  margin-left: 50px;
+  display: block;
 }
 a {
   text-decoration: none;
+  color: var(--involved);
 }
 ul {
   list-style: none;
@@ -62,11 +66,14 @@ ul {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 3;
+  display: flex;
 }
 .logo {
   display: inline-block;
   font-size: 60px;
   margin-left: 10px;
+  z-index: 3;
 }
 /* img */
 .home-img img{
@@ -402,6 +409,9 @@ p.home-researchers-p{
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
+.footer-center a{
+  text-transform: lowercase;
+}
 @media (max-width:768px) {
   .nav .menu{
     display: flex;
@@ -417,6 +427,10 @@ p.home-researchers-p{
     max-height: 0;
     transition: max-height 0.5s ease-out;
   }
+  .nav .menu a {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
   .menu a {
     display: block;
     padding: 30px;
@@ -429,6 +443,8 @@ p.home-researchers-p{
     cursor: pointer;
     float: right;
     padding: 40px 20px;
+    margin-left: auto;
+    z-index: 3;
   }
   .hamb-line {
     background-color: var(--black);
@@ -492,6 +508,9 @@ p.home-researchers-p{
     width: 100%;
   }
   /* footer */
+  .footer-home{
+    padding: 10px 30px 30px 30px;
+  }
   .footer-container{
     flex-direction: column;
     justify-content: center;
@@ -506,6 +525,15 @@ p.home-researchers-p{
   }
   .footer-home p.footer-company-explore {
     text-align: center;
+  }
+  .footer-links li{
+    padding-bottom: 10px;
+  }
+  .footer-home .footer-center i{
+    margin: 0px;
+  }
+  .footer-center{
+    padding: 30px;
   }
 }
 @media (max-width:425px){

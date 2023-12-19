@@ -17,12 +17,13 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
-.exhibition_item {
+/* .exhibition_item {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 10px;
-}
+} */
 .card {
   background-color: #091014;
   border-radius: 40px;
@@ -31,6 +32,13 @@
   flex-direction: column;
   overflow: hidden;
 }
+
+.card-header-container {
+  position:relative;
+  overflow: hidden;
+  
+}
+
 .card_content {
   padding: 1rem;
   z-index: 1;
@@ -39,11 +47,17 @@
 .card_title {
   font-size: 72px;
   line-height: 72px;
-  margin-top: -50px;
-  margin-bottom: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-shadow: black 1px 0 15px;
   color: var(--white);
 }
+.card_image {
+  width: 100%;
+}
+
 .card_text {
   color: #DDDACB;
   font-weight: 200;
@@ -52,8 +66,8 @@
   }
 }
 .exhibition-img img {
-  width: 1440px;
-  height: 798px;
+  width: 100%;
+  height: auto;
 }
 .exhibition h1 {
   color: var(--white);
