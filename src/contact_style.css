@@ -19,16 +19,17 @@
 /* form */
 .form-con {
   width: 100%;
-  height: 1048px;
+  height: 100%;
   background: var(--bg-2);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px;
 }
 
 .form-con-contact {
   width: 40%;
-  height: 50%;
+  height: 100%;
   margin: 0 auto;
   padding: 20px 40px;
   background: var(--bg-1);
@@ -82,7 +83,7 @@ input[type="email"] {
 .form-label,
 .form-field:focus~.form-label {
   position: absolute;
-  top: 5px;
+  top: -10px;
   left: 8px;
   display: block;
   transition: 0.2s;
@@ -92,24 +93,19 @@ input[type="email"] {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .form-field:focus~.form-label {
   color: var(--black);
 }
-
 .form-field:valid {
   border-color: var(--green);
 }
-
 .form-field:focus {
   padding-bottom: 6px;
   border: 1px solid var(--red);
 }
-
 .form-field:valid~.form-label {
   color: var(--green);
 }
-
 input[type=submit] {
   height: 40px;
   padding: 0 10px;
@@ -130,7 +126,6 @@ input[type=submit] {
   flex-direction: column;
   border: 5px solid var(--bg-2);
 }
-
 .con-open-hr {
   display: flex;
   flex-direction: row;
@@ -144,7 +139,6 @@ input[type=submit] {
   background-color: var(--bg-2);
   border-radius: 25px;
 }
-
 .con-open {
   color: var(--black);
   font-size: 30px;
@@ -152,7 +146,6 @@ input[type=submit] {
   font-weight: 400;
   line-height: normal;
 }
-
 .con-open-close {
   color: var(--black);
   font-size: 30px;
@@ -160,7 +153,6 @@ input[type=submit] {
   font-weight: 400;
   line-height: normal;
 }
-
 .con-open-img {
   width: 318px;
   height: 477px;
@@ -180,17 +172,15 @@ input[type=submit] {
     width: 768px;
     height: 668px;
   }
-
   .form-con {
-    width: 768px;
-    height: 1048px;
+    width: 100%;
+    padding: 50px;
   }
-
   .form-con-contact {
-    width: 768px;
-    height: 893px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
   }
-
   .form-field {
     width: 100%;
     font-size: 20px;
@@ -205,21 +195,9 @@ input[type=submit] {
     resize: none;
     outline: none;
   }
-
   .con-open-hr {
     display: flex;
-    flex-direction: row;
-    width: 600px;
-    padding: 29px 37px;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 21px 95px;
-    flex-wrap: wrap;
-    background-color: var(--bg-2);
-    border-radius: 25px;
   }
-
   .con-open {
     color: var(--black);
     font-size: 20px;
@@ -227,7 +205,6 @@ input[type=submit] {
     font-weight: 400;
     line-height: normal;
   }
-
   .con-open-close {
     color: var(--black);
     font-size: 20px;
