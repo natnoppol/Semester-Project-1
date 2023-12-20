@@ -320,94 +320,57 @@ section {
 }
 
 
-/* home-for-kid */
-.home-kid,.home-teachers, .home-researchers{
+/* promotional */
+.kids,
+.teachers,
+.researchers {
+  background-color: var(--bg-secondary);
+  margin-bottom: 4rem;
+  padding: 0;
+}
+
+.row {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
-  height: 692px;
-  background-color: var(--bg-2);
-  margin-bottom: 100px;
-}
-.home-kid img{
-  width: 702px;
-  height: 692px;
-}
-.home-kid-t{
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.home-kid-p{
-  color: var(--black);
-  text-align: center;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 600px; 
-  margin: 0 auto;
+  flex-wrap: wrap;
+  flex: 0 0 50%;
+
+  .text-col {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+    .title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    @media screen and (max-width: 425px) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .img-col {
+    flex: 1;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 425px) {
+      display: flex;
+      flex: auto;
+    }
+  }
 }
 
-/* teacher */
-.home-teachers-p {
-  color: var(--black);
-  text-align: center;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 600px; 
-  margin: 0 auto;
-}
-
-.home-teachers img {
-  width: 702px;
-  height: 692px;
-}
-
-.home-teachers-t {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 150px;
-}
-.home-teachers h1 {
-  font-size: 32px;
-  font-weight: bold;
-  margin-bottom: 50px;
+.reverse {
+  flex-direction: row-reverse;
 }
 
 
-/* researchers */
-.home-researchers-t{
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  margin-bottom: 150px;
-}
-p.home-researchers-p{
-  color: var(--black);
-  text-align: center;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 600px; 
-  margin: 0 auto;
-}
-.home-researchers img{
-  width: 702px;
-  height: 692px;
-}
+
 /* footer */
 .footer-home .footer-links a{
   color: var(--black);
