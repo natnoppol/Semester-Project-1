@@ -86,7 +86,7 @@ header {
   align-items: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-sub);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -145,7 +145,7 @@ header {
   width: 100vw;
   height: 100vh;
 
-  background-image: url(/images/pages/index/HOME-PAGE.jpg);
+  background-image: url(/images/HOME-PAGE.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
