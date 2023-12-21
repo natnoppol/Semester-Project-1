@@ -1,0 +1,136 @@
+.page-header {
+    background-color: var(--bg-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+  }
+  
+  .section-header {
+    background-color: var(--bg-sub);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 6rem;
+    text-align: center;
+  }
+  
+  .section-title {
+    text-transform: initial;
+  }
+  
+  .section-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  section {
+    @media screen and (max-width: 768px) {
+      padding: 2rem;
+    }
+  }
+  
+  .hiring {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-sub);
+  }
+  
+  .hiring .col-2 {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-sub);
+  
+    @media screen and (max-width: 768px) {
+      flex-direction: row;
+    }
+  
+    @media screen and (max-width: 425px) {
+      flex-direction: column;
+    }
+  }
+  
+  .col-2 > * {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bg-secondary);
+  }
+  
+  @media (min-width: 768px) {
+    .col-2 > * {
+      width: 50%;
+    }
+  }
+  
+  .hiring .col-2 .vertical-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contribution-card-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  
+    .card-caption {
+      margin-bottom: 2rem;
+      font-size: 3rem;
+  
+      @media screen and (max-width: 1024px) {
+        font-size: 2rem;
+      }
+  
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  .card-header img {
+    height: 100%;
+    @media screen and (max-width: 425px) {
+      height: auto;
+    }
+  }
+  
+  .card-description {
+    background-color: var(--bg-secondary);
+  
+    @media screen and (max-width: 1024px) {
+      font-size: 1rem;
+    }
+  
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+  
+  .btn-contribution {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 68px;
+    background: var(--involved);
+    font-style: normal;
+    color: var(--white);
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      width: 120px;
+      font-size: 1rem;
+    }
+  }
+  
+  .donation {
+    background-color: var(--bg-secondary);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 0;
+  }
+  
