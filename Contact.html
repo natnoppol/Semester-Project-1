@@ -1,119 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="/src/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  <header class="header">
-    <a href="/index.html" class="logo"><img src="/images/logo.png" alt="Logo"></a>
-    <input type="checkbox" class="side-menu" id="side-menu">
-    <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
-    <nav class="nav">
-      <ul class="menu">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/Contribution.html">Contribution</a></li>
-        <li><a href="/Exhibition.html">Exhibition</a></li>
-        <li><a href="/Contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
-    <div class="Contact">
-        <img src="/images/contact-img.jpg">
-    </div>
-    <div class="form-con">
-      <div class="form-con-contact">
-        <form class="form-contact">
-          <div class="form-fname">
-            <input type="text" id="full-name" class="form-field" placeholder="Name" required>
-            <label for="full-name" class="form-label">Name</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semester Project 1 - Contact Us</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="/src/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <header>
+        <div class="l-col">
+          <a href="/" class="logo">
+            <img class="ci" src="/images/logo.png" alt />
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contribution.html">Contribution</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/exhibition.html">Exhibition</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="r-col">
+          <a href="#">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </a>
+        </div>
+      </header>
+
+      <section class="hero"></section>
+
+      <section class="contact-form">
+        <div class="wrapper">
+          <h1 class="title">Contact</h1>
+          <form action="post">
+            <div class="row">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="fname"
+                  class="form-control"
+                  autocomplete="off"
+                  autofocus
+                  required />
+                <label class="floating-label">Name</label>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  autocomplete="off"
+                  required />
+                <label for="email" class="floating-label">Email</label>
+              </div>
+              <div class="form-group">
+                <textarea
+                  rows="6"
+                  id="message"
+                  class="form-control"
+                  autocomplete="off"
+                  required></textarea>
+                <label for="message" class="floating-label">Message</label>
+              </div>
+            </div>
+            <div class="button-wrapper">
+              <input type="submit" value="Send" class="btn-contact" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="opening-hours">
+        <div class="details-col">
+          <div class="wrapper">
+            <h1 class="title">Opening Hours</h1>
+            <div class="time-table">
+              <div class="col-dates">
+                <div class="day">Monday</div>
+                <div class="day">Tuesday</div>
+                <div class="day">Wednesday</div>
+                <div class="day">Thursday</div>
+                <div class="day">Friday</div>
+                <div class="day">Saturday</div>
+                <div class="day">Sunday</div>
+              </div>
+              <div class="col-times">
+                <div class="time">Closed</div>
+                <div class="time">10:00 - 16:00</div>
+                <div class="time">10:00 - 16:00</div>
+                <div class="time">10:00 - 16:00</div>
+                <div class="time">10:00 - 16:00</div>
+                <div class="time">10:00 - 16:00</div>
+                <div class="time">10:00 - 16:00</div>
+              </div>
+            </div>
           </div>
-          <div class="form-group">
-            <input type="email" id="email" class="form-field" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-            <label for="email" class="form-label">E-mail</label>
+        </div>
+        <div class="icon-col equal-columns">
+          <div class="col">
+            <img src="./images/con-img-1.jpg" alt />
+            <div class="icon-text">Tel.: 02 225 2777</div>
+            <div class="icon-text">Fax : 02 225 2775</div>
           </div>
-          <div class="form-group">
-            <textarea id="message" class="form-field" placeholder="Type here ..." rows="6" required></textarea>
-            <label for="message" class="form-label">Type here ...</label>
+          <div class="col">
+            <img src="./images/con-img-2.jpg" alt />
+            <div class="icon-text">OSLO, NORWAY</div>
           </div>
-          <input type="submit" value="Send" id="button">
-        </form> 
-      </div>  
-    </div>
-    <section class="cont-open">
-      <div class="con-open-hr">
-        <h1>Opening Hours</h1>
-        <div class="con-open-hr-day">
-          <p class="con-open">
-            Monday <br>Tuesday<br> Wednesday <br>Tursday<br> Friday<br> Saturday <br>Sunday
-          </p>
+          <div class="col">
+            <img src="./images/con-img-3.jpg" alt />
+            <div class="icon-text">natnoppol@gmail.com</div>
+          </div>
         </div>
-        <div class="con-open-hr-close">
-          <p class="con-open-close">
-            Closed <br> 10:00 - 16:00 <br>10:00 - 16:00 <br>10:00 - 16:00<br> 10:00 - 19:00 <br>09:00 - 16:00<br> 10:00 - 13:00
-          </p>
-        </div>
-      </div>
-      <div class="con-open-img">
-        <div class="con">
-          <img src="/images/con-img-1.jpg" alt="this is con img">
-          <div class="con-text">Tel.: 02 225 2777</div>
-          <div class="con-text">Fax : 02 225 2775</div>
-        </div>
-        <div class="con">
-          <img src="/images/con-img-2.jpg" alt="this is con img">
-          <div class="con-text">OSLO, NORWAY</div>
-        </div>
-        <div class="con">
-          <img src="/images/con-img-3.jpg" alt="this is con img">
-          <div class="con-text">Natnoppol@gmail.com</div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer-home">
-      <div class="footer-container">
-          <div class="footer-left">
-            <a href="/index.html" class="logo"><img src="/images/logo.png" alt="Logo"></a>
-            <ul class="footer-links">
-              <li><a href="/index.html" class="link-1">Home</a></li>
-              <li><a href="/Contribution.html">Contribution</a></li>
-              <li><a href="/Exhibition.html">Exhibition</a></li>
-              <li><a href="/Contact.html">Contact</a></li>
-              <li><a href="/Document.html">TERMS & CONDITIONS</a></li>
+      </section>
+
+      <footer class="footer">
+        <div class="cols equal-columns">
+          <div class="footer-item">
+            <a href="/index.html" class="footer-logo">
+              <img src="/images/logo.png" alt="Logo" />
+            </a>
+            <ul class="footer-nav">
+              <li class="footer-nav-item">
+                <a class="footer-link" href="/index.html">Home</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-link"
+                  href="/Contribution.html">Contribution</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-link" href="/Exhibition.html">Exhibition</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-link" href="/Contact.html">Contact</a>
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-link" href="/Document.html">TERMS &
+                  CONDITIONS</a>
+              </li>
             </ul>
           </div>
-          <div class="footer-center">
-            <div>
-              <i class="fa fa-map-marker" style="font-size:24px"></i>
-              <span>Oslo, Norway</span>
+          <div class="footer-item">
+            <div class="icon-wrapper">
+              <div class="icon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <p>Oslo, Norway</p>
             </div>
-            <div>
-              <i class="fa fa-phone"></i>
-              <p>Tel.: 02 225 2777<br>
-                Fax : 02 225 2775</p>
-            </div>
-            <div>
-              <i class="fa fa-envelope"></i>
-              <a href="mailto:natnoppol@gmail.com">natnoppol@gmail.com</a>
-            </div>
-          </div>
-          <div class="footer-right">
-              <h2>Explore together</h2>
-              <p class="footer-company-explore">
-                Come join us at the Community Science Museum where we're committed to making science accessible to all.
+            <div class="icon-wrapper">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <p>
+                Tel.: 02 225 2777<br />
+                Fax : 02 225 2775
               </p>
-            <div class="footer-icons">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-              <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+            <div class="icon-wrapper">
+              <div class="icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <a class="mail"
+                href="mailto:natnoppol@gmail.com">natnoppol@gmail.com</a>
             </div>
           </div>
-      </div>
-      <div class="copyright">© CSM COPYRIGHT 2023</div>
-    </footer>
-</body>
-</html>
+          <div class="footer-item">
+            <h2 class="social-title">Explore together</h2>
+            <p class="social-description">
+              Come join us at the Community Science Museum where we're committed
+              to making science accessible to all.
+            </p>
+            <div class="social-icons">
+              <a class="social-icon-link" href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a class="social-icon-link" href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a class="social-icon-link" href="#">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a class="social-icon-link" href="#">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">© CSM COPYRIGHT 2023</div>
+      </footer>
+    </body>
+  </html>
