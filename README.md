@@ -2,4 +2,4 @@
 Community Science Museum
 
 
-click to visit website: https://natnoppol.github.io/Semester-Project-1/
+click to visit website: https://natnoppol.github.io/SemesterProject1.github.io/
